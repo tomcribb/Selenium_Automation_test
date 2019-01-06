@@ -4,9 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.concurrent.TimeUnit;
-
 import static net.bytebuddy.implementation.MethodDelegation.to;
 import static org.testng.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
