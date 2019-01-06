@@ -30,9 +30,7 @@ public class FirstAutomatedTestTest {
         driver.findElement(By.name("q")).submit();
         String pageTitle = driver.getTitle();
         assertTrue(pageTitle.contains("JavaStart"));
-        String variable1 = "2";
-        String variable2 = "2";
-        assertTrue(variable1.equals(variable2));
+
     }
 
 
