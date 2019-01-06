@@ -26,14 +26,15 @@ public class FirstAutomatedTestTest {
     }
 
     @Test
-   public void myFirstTest() {
+    public void myFirstTest() {
         driver.get(baseUrl);
         driver.findElement(By.name("q")).sendKeys("JavaStart");
         driver.findElement(By.name("q")).submit();
-
         String pageTitle = driver.getTitle();
-
         assertTrue(pageTitle.contains("JavaStart"));
+        String variable1 = "2";
+        String variable2 = "2";
+        assertTrue(variable1.equals(variable2));
     }
 
 

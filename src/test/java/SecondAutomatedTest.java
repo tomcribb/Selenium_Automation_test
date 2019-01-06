@@ -25,15 +25,22 @@ public class SecondAutomatedTest {
 
     @Test
     public void mySecondTest() {
+            int i = 1;
+                do {
 
-       driver.navigate().to("http://www.seleniumhq.org/");
-        String pageTitle1 = driver.getTitle();
-        assertTrue(pageTitle1.equals("Selenium - Web Browser Automation"));
-        System.out.println(pageTitle1);
-        driver.navigate().to("http://przyklady.javastart.pl/jpetstore/actions/Catalog.action");
-        driver.findElement(By.xpath("//a[contains(text(),'?')]")).click();
 
-    }
+                    driver.navigate().to("http://www.seleniumhq.org/");
+                    String pageTitle1 = driver.getTitle();
+                    assertTrue(pageTitle1.equals("Selenium - Web Browser Automation"));
+                    System.out.println(pageTitle1);
+                    driver.navigate().to("http://przyklady.javastart.pl/jpetstore/actions/Catalog.action");
+                    driver.findElement(By.xpath("//a[contains(text(),'?')]")).click();
+                    assertEquals("A", "A");
+                    i++;
+                }
+                while (i < 5);
+            }
+
 
 
 
